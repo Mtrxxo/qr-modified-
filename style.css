@@ -1,0 +1,104 @@
+/* || RESET */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* || GENERAL STYLES */
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+span{
+    display: block;
+}
+
+p{
+    margin: 1rem auto 2rem;
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+}
+/* || UTILITY CLASSES */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    color: hsl(218, 44%, 22%);
+}
+
+.outer{
+    width: 350px;
+    min-height: 400px;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.outer img{
+    width: 325px;
+    height: 300px;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.attribution{
+    position: absolute;
+    left: -10000px;
+}
+
+@media (min-width:360px){
+    .outer{
+        width: 300px;
+        min-height: 400px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .outer img{
+        width: 270px;
+        height: 300px;
+    }
+}
+
+@media (min-width:576px){
+    .outer{
+        width: 400px;
+        min-height: 400px;
+    }
+
+    .outer img{
+        width: 360px;
+        height: 320px;
+    }
+}
+
+@media (min-width:992px){
+    .outer{
+        width: 350px;
+        min-height: 300px;
+    }
+
+    .outer img{
+        width: 315px;
+    }
+}
+
+@media (max-height:425px){
+    .outer{
+        margin: 2rem auto;
+    }
+}
